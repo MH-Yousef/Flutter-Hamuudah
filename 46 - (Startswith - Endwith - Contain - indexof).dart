@@ -13,4 +13,9 @@ void main() {
   // contains fonksiyonu içine yazılan elemanı içeren elemanları verir.
   String names3 = 'John' 'Jane' 'Jack' 'Jill';
   print(names3.contains('J'));
+
+  // indexof kullanımı :
+  // indexof fonksiyonu içine yazılan elemanın kaçıncı indexte olduğunu verir.
+  String names4 = 'John' 'Jane' 'Jack' 'Jill';
+  print(names4.indexOf('a'));
 }
