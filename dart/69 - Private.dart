@@ -13,7 +13,11 @@ class User {
   String _gun = "pazartesi";
   String ay = "ocak";
 
-  printgun() {
+  printgun() { // method
     print(_gun);
   }
+  User() { // constructor
+    print(_gun);
+  }
+    
 }
