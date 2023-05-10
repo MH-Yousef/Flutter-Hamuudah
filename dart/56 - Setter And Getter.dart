@@ -15,9 +15,13 @@ class Student {
     this.name = newname;
   }
 
-  String get getName => this.name; // yada
+  String get getName => Student().name /*yada this.name*/;
+  // yada
   // String get getName {
-  //   return this.name;
+  //   return this.name.toString();
   // }
-  String get getAge => this.age.toString();
+  String get getAge => this.age.toString(); // yada
+  // String get getAge {
+  //   return this.age.toString();
+  // }
 }
