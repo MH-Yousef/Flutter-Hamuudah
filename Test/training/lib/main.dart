@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:training/pages/items.dart';
+import 'package:training/pages/itemsscreen.dart';
 
 void main() {
   runApp(const MyApp());
