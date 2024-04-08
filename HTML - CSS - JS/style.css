@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.name {
+    /*muhammet*/
+    color: #ff3759;
+    text-transform: uppercase;
+}
+
+
+header {
+    background-color: #171a1c;
+    /* margin-left: 6px; */
+    width: 100%;
+    /* margin-right: 6px; */
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+
+.logo,
+.na {
+    color: white;
+    text-decoration: none;
+}
+
+.na {
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.na:hover {
+    color: #ff3759;
+}
+
+section {
+    /* background-color: #b0b4b6; */
+    padding: 100px 200px;
+}
+
+p {
+    width: 250px;
+    /* background-color: #ff3759; */
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

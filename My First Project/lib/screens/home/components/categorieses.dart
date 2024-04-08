@@ -26,28 +26,34 @@ class _CategoriesState extends State<Categories> {
   }
 
   Widget buildcategory(int index) {
-    return GestureDetector(
-      onTap: () => setState(() => selectedIndex = index),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              categories[index],
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: selectedIndex == index ? Colors.black : Colors.black38,
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: GestureDetector(
+        onTap: () => setState(() => selectedIndex = index),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SingleChildScrollView(
+                child: Text(
+                  categories[index],
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color:
+                        selectedIndex == index ? Colors.black : Colors.black38,
+                  ),
+                ),
               ),
-            ),
-            Container(
-              margin: const EdgeInsets.only(top: 5),
-              height: 2,
-              width: 30,
-              color: selectedIndex == index ? Colors.black : Colors.white,
-            )
-          ],
+              Container(
+                margin: const EdgeInsets.only(top: 5),
+                height: 2,
+                width: 30,
+                color: selectedIndex == index ? Colors.black : Colors.white,
+              )
+            ],
+          ),
         ),
       ),
     );
